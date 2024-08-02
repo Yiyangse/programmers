@@ -1,3 +1,11 @@
 function solution(n) {
-    return Math.sqrt(n) % 1 === 0 ? 1 : 2;
+    var answer = 0;
+    var a = Math.sqrt(n);
+
+    if(Number.isInteger(a)){
+        answer = 1;
+    }else{
+        answer = 2;
+    }
+    return answer;
 }
